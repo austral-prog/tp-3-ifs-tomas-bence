@@ -24,4 +24,31 @@ def discount():
         Monto de descuento: 240.0
         Total final: 960.0
     """
-    pass
+    prc_un=float(input())
+    cant=int(input())
+    subtotal = float(prc_un * cant)
+    print(f'Subtotal: {subtotal}')
+    if cant>=10:
+        descuento=0.20
+        descuento_aplicado='20%'
+        print(f'Descuento aplicado: {descuento_aplicado}')
+        print(f'Monto de descuento: {float(subtotal*descuento)}')
+        print(f'Total final: {float(subtotal-(subtotal*descuento))}')
+    elif cant>=5:
+        descuento=0.10
+        descuento_aplicado='10%'
+        print(f'Descuento aplicado: {descuento_aplicado}')
+        print(f'Monto de descuento: {float(subtotal * descuento)}')
+        print(f'Total final: {float(subtotal - (subtotal * descuento))}')
+    elif cant<5:
+        descuento=0
+        descuento_aplicado='0%'
+        print(f'Descuento aplicado: {descuento_aplicado}')
+        print(f'Monto de descuento: {float(subtotal * descuento)}')
+        print(f'Total final: {float(subtotal - (subtotal * descuento))}')
+
+
+
+
+
+
