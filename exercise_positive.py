@@ -23,4 +23,3 @@ def positive():
     elif numero<0:
         print('El numero es negativo')
 
-positive()
